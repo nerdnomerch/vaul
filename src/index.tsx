@@ -1,26 +1,4 @@
-'use client';
 
-import * as DialogPrimitive from '@radix-ui/react-dialog';
-import React from 'react';
-import { DrawerContext, useDrawerContext } from './context';
-import './style.css';
-import { usePreventScroll, isInput } from './use-prevent-scroll';
-import { useComposedRefs } from './use-composed-refs';
-import { useSnapPoints } from './use-snap-points';
-import { set, getTranslate, dampenValue, isVertical, reset } from './helpers';
-import {
-  TRANSITIONS,
-  VELOCITY_THRESHOLD,
-  CLOSE_THRESHOLD,
-  SCROLL_LOCK_TIMEOUT,
-  BORDER_RADIUS,
-  NESTED_DISPLACEMENT,
-  WINDOW_TOP_OFFSET,
-  DRAG_CLASS,
-} from './constants';
-import { DrawerDirection } from './types';
-import { useControllableState } from './use-controllable-state';
-import { useScaleBackground } from './use-scale-background';
 import { usePositionFixed } from './use-position-fixed';
 import { isIOS, isMobileFirefox } from './browser';
 
