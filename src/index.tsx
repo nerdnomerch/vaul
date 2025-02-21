@@ -1,3 +1,1 @@
 
-  Description: DialogPrimitive.Description,
-};
